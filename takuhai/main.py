@@ -1,5 +1,5 @@
 import click
-# from takuhai.convert import convert
+from takuhai.convert import convert
 
 
 @click.group()
@@ -8,7 +8,16 @@ def cli():
 
 
 @cli.command(name='convert')
-def convert_command():
+@click.argument('path')
+@click.option('--root', '-r', default='.')
+def convert_command(path, root):
+    convert(path, root)
+
+
+@cli.command(name='serve')
+# @click.argument('path')
+# @click.option('--root', '-r', default='.')
+def serve_command():
     print(1)
 
 

@@ -9,6 +9,7 @@ from takuhai.convert import convert, create_metadata, insert_metadata
     ('171206_Example.md', 'Example', '2017-12-06', None, None),
     ('Pelican/171206_Example.md', 'Example', '2017-12-06', 'Pelican', None),
     ('Pelican/12/171206_Example.md', 'Example', '2017-12-06', 'Pelican', None),
+    ('./Pelican/12/171206_Ex.md', 'Ex', '2017-12-06', 'Pelican', None),
 ])
 def test_create_metadata(path, title, date, category, modified):
     metadata = create_metadata(path)
@@ -43,6 +44,7 @@ def test_insert_metadata(path, lines, expected):
     ('Python/12/171206_Example.md', 'Modified: 2017-12-06 10:00\n\nTest\n',
      ('Modified: {}\nTitle: Example\nDate: 2017-12-06\n' +
       'Category: Python\n\nTest\n')),
+    ('Python/12/Example.md', '\nTest\n', '\nTest\n'),
 ])
 def test_convert(tmpdir, path, content, expected):
     directory, basename = os.path.split(path)
