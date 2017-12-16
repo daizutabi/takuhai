@@ -1,9 +1,11 @@
 import codecs
 import datetime
+import logging
 import os
 import re
 from collections import OrderedDict
 
+logger = logging.getLogger(__name__)
 re_compile = re.compile(r'[0-9]{6}.{2,}')
 
 
@@ -27,9 +29,6 @@ def convert(path, root='.'):
     root : str, optional
         Root directory. If omitted, the current directory is used.
     """
-    if not re_compile.match(os.path.basename(path)):
-        return
-
     fullpath = os.path.join(root, path)
 
     if os.path.isdir(fullpath):
@@ -41,6 +40,11 @@ def convert(path, root='.'):
                 convert(path, root)
         os.chdir(curdir)
         return
+    else:
+        if not re_compile.match(os.path.basename(path)):
+            return
+
+    logger.info(f'Converting: {fullpath} ')
 
     with codecs.open(fullpath, 'r', 'utf-8') as file:
         lines = file.readlines()

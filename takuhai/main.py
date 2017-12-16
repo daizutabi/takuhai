@@ -1,5 +1,9 @@
+import logging
+
 import click
 from takuhai.convert import convert
+
+logging.basicConfig(level=logging.INFO)
 
 
 @click.group()
