@@ -43,8 +43,6 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Topic :: Documentation',
     ],
-    setup_requires=['pytest-runner'],
-    tests_require=['pytest'],
 )
 
 # https://pypi.python.org/pypi?%3Aaction=list_classifiers

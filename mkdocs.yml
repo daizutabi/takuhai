@@ -13,10 +13,8 @@ extra:
   search:
     language: 'jp'
 
-
 markdown_extensions:
   - admonition
-
 
 google_analytics:
   - 'UA-110929554-1'
