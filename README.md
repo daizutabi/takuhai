@@ -3,7 +3,7 @@ Pelican converter and server
 
 ---
 
-<!-- [![PyPI Version][pypi-v-image]][pypi-v-link]
+[![PyPI Version][pypi-v-image]][pypi-v-link]
 [![Anaconda Version][anaconda-v-image]][anaconda-v-link]
 [![Travis][travis-image]][travis-link]
 
@@ -12,4 +12,4 @@ Pelican converter and server
 [anaconda-v-image]: https://anaconda.org/daizutabi/takuhai/badges/version.svg
 [anaconda-v-link]: https://anaconda.org/daizutabi/takuhai
 [travis-image]: https://img.shields.io/travis/daizutabi/takuhai.svg?style=flat-square&label=Travis+CI
-[travis-link]: https://travis-ci.org/daizutabi/takuhai -->
+[travis-link]: https://travis-ci.org/daizutabi/takuhai
