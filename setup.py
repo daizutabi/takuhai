@@ -26,7 +26,7 @@ setup(
     license='MIT',
     packages=find_packages(exclude=['tests', 'docs']),
     include_package_data=True,
-    install_requires=['pelican', 'livereload', 'markdown', 'click'],
+    install_requires=['pelican', 'livereload', 'click'],
     entry_points={
         'console_scripts': [
            'takuhai = takuhai.main:cli',
