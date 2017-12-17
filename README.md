@@ -1,9 +1,5 @@
 # Takuhai Project
 
-A Pelican server
-
----
-
 [![PyPI Version][pypi-v-image]][pypi-v-link]
 [![Anaconda Version][anaconda-v-image]][anaconda-v-link]
 [![Travis][travis-image]][travis-link]
@@ -14,8 +10,6 @@ A Pelican server
 [anaconda-v-link]: https://anaconda.org/daizutabi/takuhai
 [travis-image]: https://img.shields.io/travis/daizutabi/takuhai.svg?style=flat-square&label=Travis+CI
 [travis-link]: https://travis-ci.org/daizutabi/takuhai
-
----
 
 An enhanced version of pelican-livereload.py from [1] and [2].
 
