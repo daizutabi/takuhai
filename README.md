@@ -36,6 +36,36 @@ Reference
     of `pelicanconf.py` in developing mode. You can always set `RELATIVE_URLS`
     to False.
 
+
+Installation
+------------
+
++ PyPI
+
+```bash
+> pip install takuhai
+```
+
+
++ Anaconda Cloud
+
+```bash
+> conda install -c daizutabi -c conda-forge takuhai
+```
+
+If you write articles in markdown format, you need install `markdown` too:
+
+
+```bash
+> pip install markdown
+```
+or
+
+```bash
+> conda install markdown
+```
+
+
 Usage
 -----
 
