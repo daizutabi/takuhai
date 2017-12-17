@@ -36,7 +36,8 @@ Reference
     of `pelicanconf.py` in developing mode. You can always set `RELATIVE_URLS`
     to False.
 
-## Usage
+Usage
+-----
 
 In a Pelican project directory which contains the `pelicanconf.py`.
 
