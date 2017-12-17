@@ -13,8 +13,8 @@
 
 An enhanced version of pelican-livereload.py from [1] and [2].
 
-Reference
----------
+## Reference
+
 + [1] [Using LiveReload with Pelican](https://merlijn.vandeen.nl/2015/pelican-livereload.html)
 + [2] [LiveReload with Pelican](http://tech.agilitynerd.com/livereload-with-pelican.html)
 
@@ -23,8 +23,7 @@ Takuhai automatically builds a Pelican project when an article
 is modified and reload browser pages.
 
 
-Installation
-------------
+## Installation
 
 From PyPI
 
@@ -52,16 +51,15 @@ or
 ```
 
 
-Usage
------
+## Usage
 
-In a Pelican project directory which contains the `pelicanconf.py`.
+In a Pelican project directory which contains the `pelicanconf.py`
 
 ```bash
 > takuhai content
 ```
 
-To show options,
+To show options
 
 
 ```bash
