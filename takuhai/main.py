@@ -1,29 +1,18 @@
-import logging
-
 import click
-from takuhai.convert import convert
-
-logging.basicConfig(level=logging.INFO)
+from takuhai.serve import serve
 
 
-@click.group()
-def cli():
-    pass
+@click.command()
+@click.option('--host', '-h', default='localhost', help='Host name.')
+@click.option('--port', '-p', default='8000', help='Port number.')
+@click.option('--open_url', '-o', is_flag=True, help='Open default browser.')
+def cli(host, port, open_url):
+    serve(host, port, open_url)
 
 
-@cli.command(name='convert')
-@click.argument('path')
-@click.option('--root', '-r', default='.')
-def convert_command(path, root):
-    convert(path, root)
-
-
-@cli.command(name='serve')
-# @click.argument('path')
-# @click.option('--root', '-r', default='.')
-def serve_command():
-    print(1)
+def main():
+    cli()
 
 
 if __name__ == '__main__':
-    cli()
+    main()
