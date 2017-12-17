@@ -1,6 +1,6 @@
-# takuhai Project
+# Takuhai Project
 
-Pelican server
+A Pelican server
 
 ---
 
@@ -25,27 +25,27 @@ Reference
 + [2] [LiveReload with Pelican](http://tech.agilitynerd.com/livereload-with-pelican.html)
 
 
-`takuhai` automatically builds a Pelican project when an article
-is modified and reload the browser page.
+Takuhai automatically builds a Pelican project when an article
+is modified and reload browser pages.
 
 
 Installation
 ------------
 
-+ PyPI
+From PyPI
 
 ```bash
 > pip install takuhai
 ```
 
 
-+ Anaconda Cloud
+From Anaconda Cloud
 
 ```bash
 > conda install -c daizutabi -c conda-forge takuhai
 ```
 
-If you write articles in markdown format, you need install `markdown` too:
+If you write articles using markdown format, you need install `markdown` too:
 
 
 ```bash
