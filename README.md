@@ -1,14 +1,12 @@
 # Takuhai Project
 
-[![PyPI Version][pypi-v-image]][pypi-v-link]
+[![PyPI version](https://badge.fury.io/py/takuhai.svg)](https://badge.fury.io/py/takuhai)
 [![Anaconda Version][anaconda-v-image]][anaconda-v-link]
 [![Travis][travis-image]][travis-link]
 
-[pypi-v-image]: https://img.shields.io/pypi/v/takuhai.png
-[pypi-v-link]: https://pypi.python.org/pypi/takuhai
 [anaconda-v-image]: https://anaconda.org/daizutabi/takuhai/badges/version.svg
 [anaconda-v-link]: https://anaconda.org/daizutabi/takuhai
-[travis-image]: https://img.shields.io/travis/daizutabi/takuhai.svg?style=flat-square&label=Travis+CI
+[travis-image]: https://travis-ci.org/daizutabi/takuhai.svg?branch=master
 [travis-link]: https://travis-ci.org/daizutabi/takuhai
 
 An enhanced version of pelican-livereload.py from [1] and [2].
