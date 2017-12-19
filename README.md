@@ -6,7 +6,7 @@
 
 [anaconda-v-image]: https://anaconda.org/daizutabi/takuhai/badges/version.svg
 [anaconda-v-link]: https://anaconda.org/daizutabi/takuhai
-[travis-image]: https://travis-ci.org/daizutabi/takuhai.svg?branch=master
+[travis-image]: https://img.shields.io/travis/daizutabi/takuhai.svg?style=flat-square&label=Travis+CI
 [travis-link]: https://travis-ci.org/daizutabi/takuhai
 
 An enhanced version of pelican-livereload.py from [1] and [2].
