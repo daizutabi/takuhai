@@ -13,15 +13,12 @@
 
 An enhanced version of pelican-livereload.py from [1] and [2].
 
+Takuhai automatically builds a Pelican project when an article is modified and reload browser pages.
+
 ## Reference
 
-+ [1] [Using LiveReload with Pelican](https://merlijn.vandeen.nl/2015/pelican-livereload.html)
-+ [2] [LiveReload with Pelican](http://tech.agilitynerd.com/livereload-with-pelican.html)
-
-
-Takuhai automatically builds a Pelican project when an article
-is modified and reload browser pages.
-
+1. [Using LiveReload with Pelican](https://merlijn.vandeen.nl/2015/pelican-livereload.html)
+2. [LiveReload with Pelican](http://tech.agilitynerd.com/livereload-with-pelican.html)
 
 ## Installation
 
@@ -38,8 +35,7 @@ From Anaconda Cloud
 > conda install -c daizutabi -c conda-forge takuhai
 ```
 
-If you write articles using markdown format, you need install `markdown` too:
-
+If you write articles using markdown format, you also need to install `markdown` package:
 
 ```bash
 > pip install markdown
@@ -60,7 +56,6 @@ In a Pelican project directory which contains the `pelicanconf.py`
 ```
 
 To show options
-
 
 ```bash
 > takuhai --help
