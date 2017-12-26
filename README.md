@@ -13,7 +13,8 @@
 
 An enhanced version of pelican-livereload.py from [1] and [2].
 
-Takuhai automatically builds a Pelican project when an article is modified and reload browser pages.
+Takuhai automatically builds a Pelican project and reloads browser pages
+when an article is modified.
 
 ## Reference
 
