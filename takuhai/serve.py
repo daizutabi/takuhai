@@ -32,7 +32,7 @@ from pelican.settings import read_settings
 def build(pelican):
     try:
         pelican.run()
-    except SystemExit as e:
+    except SystemExit:
         pass
 
 
