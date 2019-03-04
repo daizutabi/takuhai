@@ -1,12 +1,9 @@
 # Takuhai Project
 
 [![PyPI version][pypi-image]][pypi-link]
-[![Travis][travis-image]][travis-link]
 
 [pypi-image]: https://badge.fury.io/py/takuhai.svg
 [pypi-link]: https://pypi.org/project/takuhai
-[travis-image]: https://travis-ci.org/daizutabi/takuhai.svg?branch=master
-[travis-link]: https://travis-ci.org/daizutabi/takuhai
 
 An enhanced version of pelican-livereload.py from [1] and [2].
 
