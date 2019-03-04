@@ -24,7 +24,7 @@ setup(
     author='daizutabi',
     author_email='daizutabi@gmail.com',
     license='MIT',
-    packages=find_packages(exclude=['tests', 'docs']),
+    packages=find_packages(),
     include_package_data=True,
     install_requires=['pelican', 'livereload', 'click'],
     entry_points={
@@ -39,8 +39,7 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Topic :: Documentation',
     ],
 )
-
-# https://pypi.python.org/pypi?%3Aaction=list_classifiers

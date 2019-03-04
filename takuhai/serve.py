@@ -21,7 +21,6 @@ This script accepts some arguments to configure Pelican's article generation.
     to False.
 """
 
-import os
 from functools import partial
 
 from livereload import Server
@@ -36,10 +35,10 @@ def build(pelican):
         pass
 
 
-def serve(content, host, port, open_url=False, relative=True):
+def serve(host: str, port: int, open_url: bool = False,
+          relative: bool = True) -> None:
     settings = read_settings('pelicanconf.py')
     settings['RELATIVE_URLS'] = relative
-    settings['PATH'] = os.path.join(settings['PATH'], content)
     pelican = Pelican(settings)
 
     _build = partial(build, pelican)
@@ -50,13 +49,5 @@ def serve(content, host, port, open_url=False, relative=True):
     server.watch(pelican.settings['THEME'], _build)
     server.watch('./pelicanconf.py', _build)
 
-    server.serve(host=host, port=port, root=settings['OUTPUT_PATH'],
+    server.serve(port=port, host=host, root=settings['OUTPUT_PATH'],
                  open_url_delay=open_url)
-
-
-def main():
-    serve('content', 'localhost', '8000')
-
-
-if __name__ == '__main__':
-    main()

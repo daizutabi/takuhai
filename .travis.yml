@@ -8,8 +8,10 @@ matrix:
       sudo: true
 
 install:
-  - pip install -r requirements.txt
-  - pip install -e .
+  - pip install -e .[develop]
+
+before_script:
+  - flake8 takuhai
+
 script:
-  - takuhai --help
   - pytest
